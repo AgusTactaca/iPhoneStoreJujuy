@@ -1,0 +1,33 @@
+*{
+    background-color: black;
+}
+.menu .toggle {
+    background-color: black;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3em;
+    color: #8c1fbe;
+    z-index: 10000;
+}
+.menu .toggle ion-icon {
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.toggle ion-icon:nth-child(1) {
+    opacity: 1;
+    transform: rotate(360deg);
+} 
+.menu .active .toggle 
+ion-icon:nth-child(1) {
+    opacity: 0;
+    transform: rotate(0deg);
+} 
